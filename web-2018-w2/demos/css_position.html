@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 2: CSS Position</title>
+    <style>
+
+        body{
+            padding: 40px;
+        }
+
+        .static{
+            background-color: brown;
+        }
+        .relative{
+            position: relative;
+            background-color: blue;
+        }
+        .absolute{
+            position: absolute;
+            background-color: green;
+        }
+        .fixed{
+            position: fixed;
+            background-color: orange;
+        }
+        .sticky{
+            position: sticky;
+            position: -webkit-sticky; /* Safari */
+            background-color: darkorange;
+        }
+
+        #container-1{
+            width: 100%;
+            background-color: antiquewhite;
+            height: 1500px;
+        }
+        #container-1 div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        #container-1 .relative{
+            top: 20px;
+            left: 40px;
+W        }
+
+        #container-1 .absolute{
+            top: 0;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container-1">
+        <div class="static">
+            position: static
+        </div>
+        <div class="relative">
+            position: relative
+        </div>
+        <div class="absolute">
+            position: absolute
+        </div>
+        <div class="fixed">
+            position: fixed
+        </div>
+        <div class="sticky">
+            position: sticky
+        </div>
+    </div>
+</body>
+</html>

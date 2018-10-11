@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 1: HtML Basic</title>
+    <style>
+        .note{
+            border: 2px solid gray;
+            border-radius: 8px;
+            font-family: sans-serif;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .note h2{
+            font-size: 1.2em;
+            margin-top: 4px;
+            margin-bottom: 6px;
+        }
+        .note p{
+            color: #1b1d23;
+        }
+        .note a{
+            color: #222f57;
+        }
+        .note a:hover{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <h2>Tag Nedir?</h2>
+        <p>HTML taglerden oluşur.</p>
+        <p>HTML case-insensitive</p>
+        <p>
+            &lt;tagname&gt; içerik &lt;/tagname&gt;
+        </p>
+    </div>
+    <div class="note">
+        <h2>Başlıklar (Headings)</h2>
+        <p>Başlıklar h1 ila h6 arasında tagler alabilir.
+            h1 başlığı sayfanın içeriği açısında en önemli başlık iken h2, h3, h4, h5, h6 sırasıyla daha az önem taşır.
+            Her birinin farklı varsayılan (default) stilleri vardır: Farklı margin ve font-size. Bunlar CSS ile değiştirilebilirler.
+        </p>
+        <p>
+            Mesela h3 taginin varsayılan CSS değerlerine bakalım.
+            <a href="https://www.w3schools.com/cssref/css_default_values.asp" target="_blank">HTML Elementlerinin varsayılan değerleri</a>
+        </p>
+    </div>
+
+    <h1>En büyük başlık</h1>
+    <h2>İkinci en büyük başlık</h2>
+    <h3>Üçüncü en büyük başlık</h3>
+    <h4>Dördüncü en büyük başlık</h4>
+    <h5>Beşinci en büyük başlık</h5>
+    <h6>Altıncı en büyük başlık</h6>
+
+    <div class="note">
+        <h2>Paragraflar</h2>
+        <p>p element paragraflar için kullanılabilir. p elementi de bir takım varsayılan değerlere sahiptir.</p>
+        <p>Doğru tag kullanmak... p yerine başka bir tag ile de aynı görüntüyü oluşturabilirsiniz.
+        Ama bu sayfanın crawlerlar (interneti tarayan robotlar) tarafından doğru bir şekilde anlaşılmasını zorlaştırabilir.</p>
+    </div>
+
+    <p>Bu bir paragraf</p>
+    <p>Başka bir paragraf</p>
+    <p>Paragrafların arasındaki boşluğa dikkat edebilirsin</p>
+
+    <div class="note">
+        <h2>Fotoğraflar (Images)</h2>
+        <p>
+            img ile fotoğraf ekleyebilirsin.
+        </p>
+        <h2>HTML Line Break</h2>
+        <h2>Preformatted Text</h2>
+    </div>
+
+    <img src="https://i.superhaber.tv/2/649/382/storage/files/images/2018/07/02/b2-xddk-cover-flGL_cover.jpg" alt="Boğaziçi Üniversitesi" width="390" height="228">
+    <img src="https://im.haberturk.com/2018/03/30/ver1522422660/1899054_620x410.jpg" alt="Boğaziçi Üniversitesi" width="310" height="205">
+
+    <div class="note">
+        <h2>Yeni Satır (Line Break)</h2>
+        <p>
+            &lt;br&gt; ya da &lt;/br&gt;
+        </p>
+    </div>
+
+    <p>İlk satır <br> İkinci satır</p>
+
+    <div class="note">
+        <h2>Butonlar</h2>
+        <p>&lt;button&gt;&lt;/button&gt;</p>
+    </div>
+
+    <button onclick="myFunc()">Buraya Bas</button>
+
+    <div class="note">
+        <h2>Listeler</h2>
+        <p>
+            &lt;ul&gt; : unordered list <br>
+            &lt;ol&gt; : ordered list
+        </p>
+    </div>
+
+    <ul>
+        <li>Armut</li>
+        <li>Elma</li>
+        <li>Portakal</li>
+        <li>Karpuz</li>
+    </ul>
+
+    <ol>
+        <li>Armut</li>
+        <li>Elma</li>
+        <li>Portakal</li>
+        <li>Karpuz</li>
+    </ol>
+
+    <div class="note">
+        <h2>Element Özellikleri (Attributes)</h2>
+        <p>
+            title <br>
+            style <br>
+            class <br>
+            id
+        </p>
+    </div>
+
+    <p title="Üzerime gelme">Benim title: Üzerime gelme</p>
+
+    <div class="note">
+        <h2>Block vs Inline Elements</h2>
+        <p>
+            Block level elements <br>
+            &lt;h1&gt; <br>
+            &lt;dl&gt; <br>
+            &lt;p&gt; <br>
+            &lt;div&gt;
+        </p>
+        <p>
+            <span class="hl">div</span> üzerine biraz konuşalım
+        </p>
+        <p>
+            Inline elements <br>
+            &lt;a&gt; <br>
+            &lt;button&gt; <br>
+            &lt;img&gt; <br>
+            &lt;span&gt;
+        </p>
+        <p>
+            <span class="hl">
+                span
+            </span>
+            üzerine biraz konuşalım
+        </p>
+        <p>
+            <a href="https://www.w3schools.com/html/html_blocks.asp">
+                Block ve inline elementlerin listesi
+            </a>
+        </p>
+    </div>
+
+    <div class="box blue">
+        <div class="box red">
+            <div class="box green">
+
+            </div>
+        </div>
+        <div class="box orange">
+
+        </div>
+    </div>
+
+    <div class="note">
+        <h2>Tablo</h2>
+    </div>
+
+    <table>
+        <tr>
+            <th>
+                Ad
+            </th>
+            <th>
+                Soyad
+            </th>
+            <th>
+                Sınıf
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Kemal
+            </td>
+            <td>
+                Tulum
+            </td>
+            <td>
+                3
+            </td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Veli</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Ayşe</td>
+            <td colspan="2">Okula gitmiyor</td>
+        </tr>
+        <tr>
+            <td>
+                Kemal
+            </td>
+            <td>
+                Tulum
+            </td>
+            <td rowspan="2">
+                3
+            </td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Veli</td>
+        </tr>
+
+    </table>
+    <script>
+        function myFunc(){
+            console.log("Butona basıldı");
+        }
+    </script>
+</body>
+</html>

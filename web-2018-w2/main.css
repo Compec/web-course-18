@@ -1,0 +1,125 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.example{
+    width: 100%;
+    background-color: antiquewhite;
+    margin: 40px 0;
+    padding: 0;
+}
+
+/* Background example */
+
+.example-background div{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+
+    /*
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+     */
+
+}
+
+.example-background div:nth-child(1){
+    background-image: url("https://picsum.photos/300/200?image=0");
+}
+
+.example-background div:nth-child(2){
+    background-image: url("https://picsum.photos/200/100?image=0");
+    background-repeat: no-repeat;
+    /*background-repeat: repeat-y;*/
+    /*background-position: x-ekseni(50% right left center) y-ekseni(50% top bottom center);*/
+    background-position: center center;
+}
+
+
+.example-background div:nth-child(3){
+    width: 80%;
+    background-image: url("https://picsum.photos/700/500?image=23");
+    background-attachment: fixed;
+}
+
+/* Margin & Padding Example*/
+.example-mp>div{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+/* Example-box model*/
+.example-box>div{
+    width: 240px;
+    height: 120px;
+    margin: 40px;
+    padding: 20px;
+    border: 12px solid blueviolet;
+    background-color: bisque;
+}
+
+/* Example link*/
+/* unvisited link */
+.example-link{
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+.example-link a:link {
+    color: red;
+}
+
+/* visited link */
+.example-link a:visited {
+    color: green;
+}
+
+/* mouse over link */
+.example-link a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+.example-linka:active {
+    color: blue;
+}
+
+.example1 *{
+    border: 1px solid red;
+}
+
+.example1 .card{
+    outline-style: groove;
+    width: 400px;
+    padding: 8px;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.example1 .card-image{
+    width: 60%;
+    /* margin: top right bottom left;*/
+    margin: 12px 30% 12px 10%;
+}
+
+.example1 .card-image img{
+    width: 100%;
+}
+
+.example1 .card-text{
+    text-align: justify;
+    text-transform: capitalize;
+    text-indent: 10px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    word-spacing: 4px;
+    text-shadow: 3px 2px gray;
+    font-weight: 400;
+}
