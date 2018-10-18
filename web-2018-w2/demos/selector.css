@@ -4,7 +4,9 @@ h2{
 color:purple
 }
 /* Give the <body> element a background of #bdc3c7*/
-
+body{
+    background-color: #bdc3c7;
+}
 
 /* Make the <h1> element #9b59b6*/
 
@@ -16,13 +18,17 @@ color:purple
 
 
 /*Change the background on every paragraph to be yellow*/
+p{
 
+}
 
 /*Make all inputs have a 3px red border*/
 
 
 /* Give everything with the class 'hello' a white background*/
-
+.hello{
+    background-color: red;
+}
 
 /* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
 
