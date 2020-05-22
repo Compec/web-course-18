@@ -1,0 +1,11 @@
+{
+  "short_name": "Boun Yemek",
+  "name": "Boun Yemekhane Uygulaması",
+  "icons": [
+  ],
+  "start_url": "/",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6"
+}
