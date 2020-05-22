@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Week 1: Introduction
+    </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .person {
+            width: 25%;
+            border: 2px solid black;
+            margin: 12px;
+            padding: 8px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .person img {
+            display: block;
+            width: 80%;
+            margin: 12px auto 12px auto;
+            border-radius: 100%;
+        }
+
+        .person:hover {
+            border: 4px solid blue;
+        }
+
+        .social-media {
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 0;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .social-media a:first-child {
+            margin-top: -8px;
+        }
+
+        .social-media a:last-child {
+            margin-top: -8px;
+        }
+
+        .social-media i{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Yönetim Kurulu Üyeleri</h1>
+    <div class="person">
+        <img src="http://compec.org/assets/team_members/yk/kemal.png" alt="Kemal Tulum">
+        <div class="social-media">
+            <a target="_blank" href="https://www.facebook.com/kemal.tulum">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/kemaltulum">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/kemaltulum">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/kemaltulum">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <h2>Kemal Tulum</h2>
+        <h3>Organizasyon Direktörü</h3>
+    </div>
+
+
+    <script>
+        var team_yk = [
+            {
+                "name": "Mert Görkçe",
+                "title": "Yönetim Kurulu Başkanı",
+                "imageSrc": "http://compec.org/assets/team_members/yk/mert.png",
+                "social": {
+                    "linkedin": "https://www.linkedin.com/in/mertgokce",
+                    "instagram": "https://www.instagram.com/mertgokce96/",
+                    "twitter": "https://twitter.com/mertgokce",
+                    "facebook": "https://www.facebook.com/mert.gokce.904"
+                }
+            },
+            {
+                "name": "Kaan Ünlü",
+                "title": "Genel Sekreter",
+                "imageSrc": "http://compec.org/assets/team_members/yk/kaan.png",
+                "social": {
+                    "linkedin": "https://www.linkedin.com/in/oguzkaanunlu",
+                    "instagram": "https://www.instagram.com/_kaanunlu",
+                    "twitter": "https://twitter.com/_kaanunlu",
+                    "facebook": "https://www.facebook.com/kaanunlu"
+                }
+            },
+            {
+                "name": "Görkem Çoklar",
+                "title": "Kurumsal İletişim ve Finans Direktörü",
+                "imageSrc": "http://compec.org/assets/team_members/yk/gorkem.png",
+                "social": {
+                    "linkedin": "https://www.linkedin.com/in/gorkemcoklar",
+                    "instagram": "https://www.instagram.com/svemiru",
+                    "facebook": "https://www.facebook.com/gorkem.coklar"
+                }
+            },
+            {
+                "name": "Onur Can Avcı",
+                "title": "ARGE Direktörü",
+                "imageSrc": "http://compec.org/assets/team_members/yk/onurcan.png",
+                "social": {
+                    "linkedin": "https://www.linkedin.com/in/onurcanavci",
+                    "instagram": "https://www.instagram.com/onurcanavc",
+                    "facebook": "https://www.facebook.com/onurcanavci28"
+                }
+            },
+            {
+                "name": "Yasemin Piroğlu",
+                "title": "Organizasyon Direktörü",
+                "imageSrc": "http://compec.org/assets/team_members/yk/yasemin.png",
+                "social": {
+                    "linkedin": "https://www.linkedin.com/in/yaseminpiroglu",
+                    "instagram": "https://www.instagram.com/yaseminpiroglu",
+                    "twitter": "https://twitter.com/yaseminnosko",
+                    "facebook": "https://www.facebook.com/yaseminpirogluu"
+                }
+            },
+            {
+                "name": "Kemal Tulum",
+                "title": "Organizasyon Direktörü",
+                "imageSrc": "http://compec.org/assets/team_members/yk/kemal.png",
+                "social": {
+                    "linkedin": "https://www.linkedin.com/in/kemaltulum",
+                    "instagram": "https://www.instagram.com/kemaltulum",
+                    "twitter": "https://twitter.com/kemaltulum",
+                    "facebook": "https://www.facebook.com/kemal.tulum"
+                }
+            },
+            {
+                "name": "Zeynep Arslan",
+                "title": "PR Direktörü",
+                "imageSrc": "http://compec.org/assets/team_members/yk/zeynep.png",
+                "social": {
+                    "linkedin": "https://www.linkedin.com/in/zeynpparslnn",
+                    "instagram": "https://www.instagram.com/zeynpparslnn",
+                    "twitter": "https://twitter.com/zeynpparslnn",
+                    "facebook": "https://www.facebook.com/zeynpparslnn"
+                }
+            }
+        ]
+    </script>
+    <script>
+        var header = document.createElement('h1');
+        var header_text = document.createTextNode('Yönetim Kurulu Üyeleri');
+        header.appendChild(header_text);
+
+        var body = document.getElementsByTagName("body")[0];
+        body.appendChild(header);
+
+        for (var i = 0; i < team_yk.length; i++) {
+            var personData = team_yk[i];
+            var person = document.createElement('div');
+            person.classList.add('person');
+
+            var img = document.createElement('img');
+            img.src = personData.imageSrc;
+            img.alt = personData.name;
+            person.appendChild(img)
+
+            var header2 = document.createElement('h2');
+            header2.appendChild(document.createTextNode(personData.name));
+            person.appendChild(header2)
+
+            var header3 = document.createElement('h3');
+            header3.appendChild(document.createTextNode(personData.title));
+            person.appendChild(header3);
+
+            body.appendChild(person);
+        }
+    </script>
+</body>
+
+</html>
